@@ -5,14 +5,16 @@
     <meta charset="utf-8" />
     <title>8760 Hours</title>
     <style>
-p {
-  margin-top: 0px;
-}
 
 body {
   padding: 5px;
   font: 0.9em 'Georgia';
   background-color: #fdf6e3;
+  line-height: 1.45;
+}
+
+p {
+  margin-top: 0px;
   line-height: 1.45;
 }
 
@@ -32,29 +34,17 @@ figure a:active {
   outline: 1px solid blue;
 }
 
-@media (min-width: 800px) {
-  .col {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-  }
-  body {
-    margin: 0 auto;
-    max-width: 760px;
-    font: 1.1em 'Georgia';
-  }
-
-  figure {
-    float: right;
-  }
-}
-
 blockquote {
   margin-left: 20px;
 }
 
 ul {
   padding-left: 20px;
+  line-height: 1.45;
+}
+
+ul li {
+  line-height: 1.45;
 }
 
 ul h3 {
@@ -95,13 +85,30 @@ header {
   font-size: .9 em;
 }
 
-@media (min-width: 800px) {
-  margin-bottom: 100px;
-}
-
 header h1,
 header p:first-of-type {
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  header {
+    margin-bottom: 100px;
+  }
+
+  .col {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  body {
+    margin: 0 auto;
+    max-width: 760px;
+    font: 1.1em 'Georgia';
+  }
+
+  figure {
+    float: right;
+  }
 }
 
     </style>
