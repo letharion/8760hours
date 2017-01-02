@@ -5,26 +5,33 @@
     <meta charset="utf-8" />
     <title>8760 Hours</title>
     <style>
-p {
-  margin-top: 0px;
-}
 
 body {
   padding: 5px;
-  font: 1.1em 'Verdana';
+  font: 0.9em 'Georgia';
   background-color: #fdf6e3;
+  line-height: 1.45;
 }
 
-@media (min-width: 800px) {
-  .col {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-  }
-  body {
-    margin: 0 auto;
-    max-width: 760px;
-  }
+p {
+  margin-top: 0px;
+  line-height: 1.45;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+figure a:link,
+figure a:visited,
+figure a:hover,
+figure a:active {
+  border: none;
+  outline: none;
+}
+
+figure a:active {
+  outline: 1px solid blue;
 }
 
 blockquote {
@@ -33,6 +40,11 @@ blockquote {
 
 ul {
   padding-left: 20px;
+  line-height: 1.45;
+}
+
+ul li {
+  line-height: 1.45;
 }
 
 ul h3 {
@@ -48,13 +60,19 @@ nav ul ul {
   list-style: none;
 }
 
+h1 {
+  margin: 40px 0 20px;
+}
+
 h2 {
   color: #93a1a1;
+  margin: 30px 0 15px;
 }
 
 h3 {
   color: #859900;
 	margin-bottom: 0px;
+  margin: 20px 0 5px;
 }
 
 .lead {
@@ -63,8 +81,34 @@ h3 {
 }
 
 header {
+  margin-bottom: 30px;
+  font-size: .9 em;
+}
+
+header h1,
+header p:first-of-type {
   text-align: center;
-  margin-bottom: 100px;
+}
+
+@media (min-width: 800px) {
+  header {
+    margin-bottom: 100px;
+  }
+
+  .col {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  body {
+    margin: 0 auto;
+    max-width: 760px;
+    font: 1.1em 'Georgia';
+  }
+
+  figure {
+    float: right;
+  }
 }
 
     </style>
@@ -128,7 +172,7 @@ header {
         </ul>
       </ul>
     </nav>
-    <h1 id="introduction">Introduction</h1>
+    <h1 id="introduction" class="heading-intro">Introduction</h1>
 
     <p class = "lead">This is a guide for planning the next 8,760 hours - one full year - of your life. More importantly, it is about creating a detailed plan and optimizing for success, based on an understanding of what works.</p>
 
@@ -183,7 +227,7 @@ header {
     <p>The start of a new year is useful. There tends to be a positive "change can happen!" atmosphere that explains why people make their new year's resolutions in the first place. A new year. A clean slate. A time to make some changes. Let's still do that, but let's do it right</p>
     <h2 id = "how to use">How to use this guide</h2>
     <p>I'm going to illustrate what it is that I do, and I invite you to follow along</p>
-    <p>First I do an initial overview of my life. This helps get the mind ready to do the whole process and starts me thinking about what I'm doing with my life, where my priorities are, what I want - in general, and roughly over the next year.</p> 
+    <p>First I do an initial overview of my life. This helps get the mind ready to do the whole process and starts me thinking about what I'm doing with my life, where my priorities are, what I want - in general, and roughly over the next year.</p>
 
     <p>
     Next I review, in detail, the state of all areas of my life, and specifically any major projects completed in the past year or still underway.</p>
@@ -228,14 +272,18 @@ header {
     </p>
     <h2 id = "mind mapping">A note on mind mapping</h2>
     <p>Mind mapping consists of starting with a central idea in the middle of the page and branching out ideas from there. For example, the following two figures are of an early pen and paper mind map I made when outlining this guide and my review mind map from last year, respectively.</p>
-    <figure style = "float: right;">
-      <img src = "./8760-figure1.png" />
-      <p>Figure 1: A sample paper & pen mind map.</p>
+    <figure>
+      <a href="./8760-figure1.png">
+        <img src = "./8760-figure1.png" />
+        <p>Figure 1: A sample paper & pen mind map.</p>
+      </a>
     </figure>
 
-    <figure style = "float: right;">
-      <img src = "./8760-figure2.png" />
-      <p>Figure 2: Sample Mindmanager mind map</p>
+    <figure>
+      <a href="./8760-figure2.png">
+        <img src = "./8760-figure2.png" />
+        <p>Figure 2: Sample Mindmanager mind map</p>
+      </a>
     </figure>
     <p>For things like outlining, big picture thinking, and connecting ideas, mind mapping is vastly superior to linear note taking, whether it’s with pen and paper or a software on your computer.</p>
     <p>Paper has the benefits of flexibility and creativity, whereas software has the benefits of any electronic tool - mobility, copying and pasting, printing, resizing, easy scaling, etc.</p>
@@ -392,9 +440,11 @@ header {
       <li>Am I well-positioned and networked within my industry?</li>
       <li>How stressful is my career/work?</li>
       <h3>Health & Fitness</h3>
-      <figure style = "float: right;">
-        <img src = "./8760-figure3.png" />
-        <p>Figure 3: My Health & Fitness review.</p>
+      <figure>
+        <a href="./8760-figure3.png">
+          <img src = "./8760-figure3.png" />
+          <p>Figure 3: My Health & Fitness review.</p>
+        </a>
       </figure>
       <li>What do I typically eat? What is my current diet?</li>
       <li>Do I regularly eat fast food or make healthy home-cooked meals?</li>
@@ -528,8 +578,10 @@ header {
 
     <p>The internet is full of life-hacking and optimization tips and tricks, and I can't possibly cover them all, so here are just a few of my favorites.</p>
     <h2 id = "procrastination">The procrastination equation</h2>
-    <figure style = "float: right;">
-      <img width="320px"  src = "./8760-poster.png" />
+    <figure>
+      <a href="./8760-poster.png">
+        <img width="320px"  src = "./8760-poster.png" />
+      </a>
     </figure>
 
     <p>The procrastination equation is a way of illustrating how our motivations work. This equation accounts for every major finding on procrastination</p>
@@ -566,9 +618,11 @@ header {
     <p>Major goals are often exactly that: major.  Meaning, they can probably be broken down into smaller, more manageable goals and projects. Review your major goals and break them down if possible.</p>
 
     <h2 id = "yearly calendar">Yearly calendar</h2>
-    <figure style = "float: right;">
-      <img src = "./8760-figure4.png" />
-      <p>Figure 4: A sample compact calendar.</p>
+    <figure>
+      <a href="./8760-figure4.png"">
+        <img src = "./8760-figure4.png" />
+        <p>Figure 4: A sample compact calendar.</p>
+      </a>
     </figure>
     <p>I use a compact single-page year calendar from David Seah, available at <a href = "http://davidseah.com/compact-calendar/">http://davidseah.com/compact-calendar/</a>. This holds my "big-picture" for the upcoming year. On it I place things like:</p>
     <ul>
